@@ -1,0 +1,21 @@
+{
+    "name": "ysp",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "app.js"
+    },
+    "dependencies": {
+        "express": "3.0.3",
+        "jade": "*",
+        "stylus": "*",
+        "passport": "*",
+        "passport-facebook": "*",
+        "express-expose": "*",
+        "connect-assetmanager": "*"
+    },
+    "subdomain": "sr_cafe.ysp",
+    "engines": {
+        "node": "0.8.x"
+    }
+}

@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+	- if (locals.user)
+		p Hello #{locals.user.name}
+	- else
+		p Hello, stranger!

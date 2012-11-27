@@ -1,0 +1,57 @@
+doctype 5
+//if lt IE 7
+	html.no-js.ie.lt-ie9.lt-ie8.lt-ie7(lang='es')
+//if lt IE 8
+	html.no-js.ie.lt-ie9.lt-ie8(lang='es')
+//if lt IE 9
+	html.no-js.ie.lt-ie9(lang='es')
+//[if gt IE 8]><!
+	html.no-js(lang='es')
+//<![endif]
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title= title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(src='javascripts/modernizr.js')
+	body
+		div(class='header-container')
+			header(class='wrapper clearfix')
+				hgroup
+					h1=title
+					h2 Jum
+
+		div(class='main-container')
+			div(class='main wrapper clearfix')
+				block content
+
+		div(class='footer-container')
+			footer('class="wrapper')
+
+		script(src='/javascripts/script.js')
+		script
+			
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '191047081020667', // App ID
+					channelUrl : '', // Channel File
+					status     : true, // check login status
+					cookie     : true, // enable cookies to allow the server to access the session
+					oauth      : true, // enable OAuth 2.0
+					xfbml      : false  // parse XFBML
+				});
+
+				new App().start();
+			};
+
+			// Load the SDK Asynchronously
+			(function(d){
+				var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+				js = d.createElement('script'); js.id = id; js.async = true;
+				js.src = "//connect.facebook.net/en_US/all.js";
+				d.getElementsByTagName('head')[0].appendChild(js);
+			}(document));
+			
